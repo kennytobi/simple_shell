@@ -124,7 +124,7 @@ int _strcmp(char *, char *);
 char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
-char *strcpy(char *, char *);
+char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
 int _putchar(char);
@@ -181,7 +181,7 @@ int read_history(info_t *info);
 int build_history_list(info_t *info, char *buf, int linecount);
 int renumber_history(info_t *info);
 
-list_t *add_node(list_t ** const char *, int);
+list_t *add_node(list_t **, const char *, int);
 list_t *add_node_end(list_t **, const char *, int);
 size_t print_list_str(const list_t *);
 int delete_node_at_index(list_t **, unsigned int);

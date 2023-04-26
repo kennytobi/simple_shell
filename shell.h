@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef _SHELL_H_
+#define _SHELL_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -132,6 +132,7 @@ int _putchar(char);
 char *_strncpy(char *, char *, int);
 char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
+char *strchr(const char *s, int c);
 
 char **strtow(char *, char *);
 char **strtow2(char *, char);
@@ -156,6 +157,9 @@ void remove_comments(char *);
 int _myexit(info_t *);
 int _mycd(info_t *);
 int _myhelp(info_t *);
+
+int _myhistory(info_t *);
+int _myalias(info_t *);
 
 ssize_t get_input(info_t *);
 int _getline(info_t *, char **, size_t *);

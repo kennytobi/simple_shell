@@ -45,21 +45,12 @@ char **list_to_strings(list_t *head)
 			free(strs);
 			return (NULL);
 		}
-<<<<<<< HEAD
-=======
-
->>>>>>> ea4a1b2b33254a8d65304a1e9c9bd0bff15bed22
 		str = _strcpy(str, node->str);
 		strs[i] = str;
 	}
 	strs[i] = NULL;
 	return (strs);
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> ea4a1b2b33254a8d65304a1e9c9bd0bff15bed22
 /**
  * print_list - prints all elements of a list_t linked list
  * @h: pointer to first node
@@ -103,10 +94,6 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 	}
 	return (NULL);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> ea4a1b2b33254a8d65304a1e9c9bd0bff15bed22
 /**
  * get_node_index - gets the index of a node
  * @head: pointer to list head

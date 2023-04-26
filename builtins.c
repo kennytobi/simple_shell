@@ -1,4 +1,5 @@
 #include "shell.h"
+#include <string.h>
 /**
  * _myhistory - this displays the history list,one command by line, preceded
  * with line numbers, starting at 0.
@@ -67,7 +68,7 @@ int print_alias(list_t *node)
 		_putchar('\'');
 		_puts(p + 1);
 		_puts("'\n");
-		return (0);
+		re5turn (0);
 	}
 	return (1);
 }

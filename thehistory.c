@@ -139,3 +139,4 @@ node->num = i++;
 node = node->next;
 }
 return (info->histcount = i);
+}
